@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html'%}
+{% block base_block %}
+<html lang="en">
+{% load static%}
+<head>
+    <meta charset="UTF-8">
+    <title>Mail</title>
+</head>
+<body>
+<link rel="stylesheet" href="{%static 'css/demo.css'%}">
+<h1>This is Data Page!!!</h1>
+<h1>Event Details</h1>
+{%if obj %}
+<table>
+    <thead>
+    <th>employee ID</th>
+    <th>Employee Name</th>
+    <th>Event Type</th>
+    <th>Date</th>
+    </thead>
+    {%for item in obj%}
+    <tr>
+        <td>{{item.employee_id}}</td>
+        <td>{{item.employee_name}}</td>
+        <td>{{item.event_type}}</td>
+        <td>{{item.event_date}}</td>
+    </tr>
+    {%endfor%}
+</table>
+{%else%}
+<h1>No record Found</h1>
+{%endif%}
+
+<h1>Employee List</h1>
+{%if obj1 %}
+<table>
+    <thead>
+    <th>employee ID</th>
+    <th>Email ID</th>
+    </thead>
+    {%for item in obj1%}
+    <tr>
+        <td>{{item.emp_id}}</td>
+        <td>{{item.email_id}}</td>
+    </tr>
+    {%endfor%}
+</table>
+{%else%}
+<h1>No record Found</h1>
+{%endif%}
+
+{%endblock%}
+</body>
+</html>

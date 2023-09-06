@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html'%}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+{% block base_block %}
+{%csrf_token%}
+ <h2>You have been logged out</h2>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            <a href="{% url 'login' %}">Log In Again</a>
+        </small>
+    </div>
+
+{%endblock%}
+</body>
+</html>
