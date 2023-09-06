@@ -13,6 +13,11 @@ This Django Project sent event mail
 
 ## Installing
 first provide mail-id and mail app paswsword in setting.py
+
+## first add some data to Details and Employee table and then test the app
+
+
+
 ### follow this steps
 
 ```bash
@@ -28,4 +33,4 @@ python source/manage.py createsuperuser
 ```bash
 python source/manage.py runserver
 ```
-## first add some data to Details and Employee table and then test the app
+
