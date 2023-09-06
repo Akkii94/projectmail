@@ -1,5 +1,13 @@
 # projectmail
 This Django Project sent event mail
+## Functionality
+
+- Log in
+    - via email or username & password
+- Create an account
+- Log out
+- Register
+
 ## Installing
 first provide mail-id and mail app paswsword in setting.py
 ### follow this steps
