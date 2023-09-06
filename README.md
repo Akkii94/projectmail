@@ -7,6 +7,9 @@ This Django Project sent event mail
 - Create an account
 - Log out
 - Register
+- home
+- sent-mail
+- mail-List
 
 ## Installing
 first provide mail-id and mail app paswsword in setting.py
